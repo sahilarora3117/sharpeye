@@ -21,6 +21,7 @@
     "mongodb-core": "^3.2.7",
     "mongoose": "^5.9.7",
     "node-gyp": "^6.1.0",
+    "randomcolor": "^0.5.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",

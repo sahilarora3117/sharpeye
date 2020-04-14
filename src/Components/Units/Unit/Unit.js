@@ -6,23 +6,22 @@ import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
-import { red } from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import Button from '@material-ui/core/Button';
-
+import randomColor from 'randomcolor';
+var color = randomColor;
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 345,
     minWidth: 345,
-    float: 'left',
-    margin: '3em'
   },
 
 
   avatar: {
-    backgroundColor: red[500],
+    backgroundColor: color,
   },
-
+  cardfooter: {
+    justifyContent: 'space-around',
+  },
 }));
 const Unit = (props) => {
   const classes = useStyles();
@@ -39,11 +38,11 @@ const Unit = (props) => {
       />
       <CardContent>
       </CardContent>
-      <CardActions disableSpacing>
+      <CardActions className={classes.cardfooter}>
         <IconButton aria-label="add to favorites" onClick={() => console.log("Heart button Clicked")}>
           <FavoriteIcon />
         </IconButton>
-        <Button variant="contained" color="secondary" className="shownews" onClick={() => console.log("newsButton clicked")}>
+        <Button variant="contained" color="secondary" onClick={() => console.log("newsButton clicked")}>
             See News
         </Button>
       </CardActions>
