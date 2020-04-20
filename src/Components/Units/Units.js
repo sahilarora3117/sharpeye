@@ -20,8 +20,8 @@ const Units = (props) => {
         <Grid container justify="center" spacing={10}>
         {props.result
                     .map ((element, index) =>(
-            <Grid key={element["Security Code"]} item>
-                 <Unit key={element["Security Code"]} name={element["Security Name"]} code={element["Security Code"]}/>
+            <Grid key={element["SecurityNum"]} item>
+                 <Unit key={element["SecurityNum"]} Securityname={element["SecurityName"]} name={element["Name"]} code={element["Security Code"]}/>
             </Grid>
           ))}
         </Grid>

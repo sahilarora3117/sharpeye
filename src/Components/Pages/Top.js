@@ -7,7 +7,7 @@ import axios from 'axios'
 const Top = () => {
   let [result, setResult] = useState([]);
   useEffect(() => {
-    axios.get('https://sharpeye-473e3.firebaseio.com/corporates.json')
+    axios.get('https://sharpeye-473e3.firebaseio.com/.json')
     .then(function (response) {
       console.log(response.data)
 
